@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <button class="navigation__toggle" id="toggleNav">
+      <img src="img/burger.svg" alt="burger" />
+    </button>
+    <nav class="navigation">
+      <div class="navigation__logo">
+        <img class="navigation__logo-image" src="img/logo.svg" alt="logo" />
+        <h1 class="navigation__logo-text">Dashboard</h1>
+        <p class="navigation__logo-version">v.01</p>
+      </div>
+
+      <div class="navigation__mobile">
+        <button class="navigation__dashboard">
+          <img class="dashboard-img" src="img/key.svg" alt="key" />
+          <p class="dashboard-text">Dashboard</p>
+        </button>
+        <div class="navigation__menu">
+          <button class="menu-item">
+            <img class="menu-item__image" src="img/square.svg" alt="square" />
+            <p class="menu-item__text">Product</p>
+            <img
+              class="menu-item__chevron"
+              src="img/chevron-right.svg"
+              alt="chevron"
+            />
+          </button>
+          <button class="menu-item focused">
+            <img
+              class="menu-item__image"
+              src="img/customers.svg"
+              alt="customers"
+            />
+            <p class="menu-item__text">Customers</p>
+            <img
+              class="menu-item__chevron"
+              src="img/chevron-right.svg"
+              alt="chevron"
+            />
+          </button>
+          <button class="menu-item">
+            <img class="menu-item__image" src="img/wallet.svg" alt="wallet" />
+            <p class="menu-item__text">Income</p>
+            <img
+              class="menu-item__chevron"
+              src="img/chevron-right.svg"
+              alt="chevron"
+            />
+          </button>
+          <button class="menu-item">
+            <img
+              class="menu-item__image"
+              src="img/discount.svg"
+              alt="discount"
+            />
+            <p class="menu-item__text">Promote</p>
+            <img
+              class="menu-item__chevron"
+              src="img/chevron-right.svg"
+              alt="chevron"
+            />
+          </button>
+          <button class="menu-item">
+            <img
+              class="menu-item__image"
+              src="img/question.svg"
+              alt="question"
+            />
+            <p class="menu-item__text">Help</p>
+            <img
+              class="menu-item__chevron"
+              src="img/chevron-right.svg"
+              alt="chevron"
+            />
+          </button>
+        </div>
+        <button class="navigation__user">
+          <img class="navigation__user-avatar" src="img/user.svg" alt="user" />
+          <div class="navigation__user-info">
+            <p class="navigation__user-name">Evano</p>
+            <p class="navigation__user-role">Project Manager</p>
+          </div>
+        </button>
+      </div>
+    </nav>
+
+    <main class="main">
+      <h2 class="main__greeting">Hello Evano👋,</h2>
+      <section class="main__dashboard">
+        <div class="dashboard__header">
+          <div class="dashboard__info">
+            <p class="dashboard__info-customers">All Customers</p>
+            <p class="dashboard__info-members">Active Members</p>
+          </div>
+          <div class="dashboard__header-search">
+            <label for="search">
+              <img src="img/search.svg" alt="search" />
+            </label>
+            <input
+              class="dashboard__header-search-input"
+              type="text"
+              id="search"
+              placeholder="Search"
+            />
+          </div>
+        </div>
+
+        <div class="dashboard__table">
+          <table class="table">
+            <thead class="table__head">
+              <tr class="table__head-row">
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="table__body-row">
+                <td data-title="Customer Name">Jane Cooper</td>
+                <td data-title="Company">Microsoft</td>
+                <td data-title="Phone Number">(225) 555-0118</td>
+                <td data-title="Email">jane@microsoft.com</td>
+                <td data-title="Country">United States</td>
+                <td data-title="Status"><span class="active">Active</span></td>
+              </tr>
+              <tr class="table__body-row">
+                <td data-title="Customer Name">Floyd Miles</td>
+                <td data-title="Company">Yahoo</td>
+                <td data-title="Phone Number">(205) 555-0100</td>
+                <td data-title="Email">floyd@yahoo.com</td>
+                <td data-title="Country">Kiribati</td>
+                <td data-title="Status">
+                  <span class="inactive">Inactive</span>
+                </td>
+              </tr>
+              <tr class="table__body-row">
+                <td data-title="Customer Name">Ronald Richards</td>
+                <td data-title="Company">Adobe</td>
+                <td data-title="Phone Number">(302) 555-0107</td>
+                <td data-title="Email">ronald@adobe.com</td>
+                <td data-title="Country">Israel</td>
+                <td data-title="Status">
+                  <span class="inactive">Inactive</span>
+                </td>
+              </tr>
+              <tr class="table__body-row">
+                <td data-title="Customer Name">Marvin McKinney</td>
+                <td data-title="Company">Tesla</td>
+                <td data-title="Phone Number">(252) 555-0126</td>
+                <td data-title="Email">marvin@tesla.com</td>
+                <td data-title="Country">Iran</td>
+                <td data-title="Status"><span class="active">Active</span></td>
+              </tr>
+              <tr class="table__body-row">
+                <td data-title="Customer Name">Jerome Bell</td>
+                <td data-title="Company">Google</td>
+                <td data-title="Phone Number">(629) 555-0129</td>
+                <td data-title="Email">jerome@google.com</td>
+                <td data-title="Country">Réunion</td>
+                <td data-title="Status"><span class="active">Active</span></td>
+              </tr>
+              <tr class="table__body-row">
+                <td data-title="Customer Name">Kathryn Murphy</td>
+                <td data-title="Company">Microsoft</td>
+                <td data-title="Phone Number">(406) 555-0120</td>
+                <td data-title="Email">kathryn@microsoft.com</td>
+                <td data-title="Country">Curaçao</td>
+                <td data-title="Status"><span class="active">Active</span></td>
+              </tr>
+              <tr class="table__body-row">
+                <td data-title="Customer Name">Jacob Jones</td>
+                <td data-title="Company">Yahoo</td>
+                <td data-title="Phone Number">(208) 555-0112</td>
+                <td data-title="Email">jacob@yahoo.com</td>
+                <td data-title="Country">Brazil</td>
+                <td data-title="Status"><span class="active">Active</span></td>
+              </tr>
+              <tr class="table__body-row">
+                <td data-title="Customer Name">Kristin Watson</td>
+                <td data-title="Company">Facebook</td>
+                <td data-title="Phone Number">(704) 555-0127</td>
+                <td data-title="Email">kristin@facebook.com</td>
+                <td data-title="Country">Åland Islands</td>
+                <td data-title="Status">
+                  <span class="inactive">Inactive</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="dashboard__data">
+          <p class="dashboard__data-entries">
+            Showing data 1 to 8 of 256K entries
+          </p>
+          <div class="dashboard__data-buttons">
+            <button class="dashboard__data-button">
+              <img src="img/chevron_left.svg" alt="left" />
+            </button>
+            <button class="dashboard__data-button focused">1</button>
+            <button class="dashboard__data-button">2</button>
+            <button class="dashboard__data-button">3</button>
+            <button class="dashboard__data-button">4</button>
+            <span>...</span>
+            <button class="dashboard__data-button">40</button>
+            <button class="dashboard__data-button">
+              <img src="img/chevron_right.svg" alt="right" />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
